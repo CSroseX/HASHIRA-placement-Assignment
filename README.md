@@ -1,4 +1,4 @@
-# Shamir's Secret Sharing - Assignment Solution
+# Hashira 1st sept placement Assignment Solution
 
 ## Overview
 This program implements Shamir's Secret Sharing scheme to reconstruct a secret from a threshold number of keys using Lagrange Interpolation.
