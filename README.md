@@ -24,18 +24,7 @@ assignment.exe < input.txt
 
 ## Solution Methodology
 
-The solution implements Shamir's Secret Sharing scheme through the following steps:
-
-1. **JSON Input Parsing**: The program reads a JSON input file containing:
-   - `n`: Total number of keys
-   - `k`: Threshold number of keys required for reconstruction
-   - `keys`: List of keys with their base and value representations
-
-2. **Base Conversion**: Each key value is decoded from its specified base representation into decimal form
-
-3. **Lagrange Interpolation**: Using at least `k` keys, the algorithm applies Lagrange Interpolation to reconstruct the original secret
-
-4. **Secret Recovery**: The reconstructed secret is output, ensuring it can only be recovered with the threshold number of valid keys
+The solution implements Shamir's Secret Sharing scheme by first parsing a JSON input file that contains the total number of keys (n), the threshold number of keys needed for reconstruction (k), and a list of keys with their values in different bases. Each key is then converted from its specified base into a decimal value. Using at least k keys, the algorithm applies Lagrange Interpolation to accurately reconstruct the original secret. Finally, the secret is recovered and output, ensuring that it can only be obtained when the required threshold number of valid keys is provided.
 
 ## Requirements
 
